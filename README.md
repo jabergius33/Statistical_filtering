@@ -1,4 +1,3 @@
 # Statistical_filtering
- -DSOR
- -DROR
- -lIOR
+
+repo includes Python code for statistical point-wise filtering (LiOR,DSOR & DROR)
