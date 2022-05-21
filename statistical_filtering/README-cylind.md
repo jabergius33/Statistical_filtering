@@ -12,20 +12,24 @@ The code is implmeted on linux ubuntu 20.04
   * 
   *
   
-### How to use it for binary segmentation:
+### How to use it:
 
 
 #### Training (potentially need to chmod +x the file)
 
-1. Modify the config file at '/config/semantickitti.yaml' (change setup and dataset path)
+1. Modify the config file at 'config/semantickitti.yaml' (change setup and dataset path)
 2. Train the network by running: 
 ```
 sh train.sh
 ```
 
 #### Generate prediction labels (demo_test_folder.py )
+1. Update path to model in "demo_test_folder.py" (model to infer)
+2. Create an empty 'Sequences' folder where the predictions will be stored
+3. Run: demo_test_folder.py
+
   Args:
-* --demo-folder : Path to the data sequence
+* --demo-folder : Path to the dataset (sequences folder)
  ##### Example:
 ```
 python demo_test_folder.py --demo-folder /dataset/sequences/
@@ -34,8 +38,8 @@ python demo_test_folder.py --demo-folder /dataset/sequences/
 
 #### Evaluate file (Result.py)    
 Inputs:
-* --prediction-folder : Path to predictions folder
-* --dataset-folder : Path to the dataset (/data_path)   
+* --prediction-folder : Path to predictions folder (/pred)
+* --dataset-folder : Path to the dataset (/dataset/sequences/)   
  ##### Example:
  ```
  python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
