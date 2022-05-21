@@ -5,19 +5,18 @@ The code is implmeted on linux ubuntu 20.04
 
 #### Pre-config:
 ##### Create a environment with:
-  * 
+  * conda env create -f environment.yml
  ##### Activate it using:
   * conda activate Cylinder
 ##### Install additional package:
-  * 
-  *
+  * pip install -U scikit-learn
   
 ### How to use it:
 
 
 #### Training (potentially need to chmod +x the file)
 
-1. Modify the config file at 'config/semantickitti.yaml' (change setup and dataset path)
+1. Modify the config file at 'config/semantickitti.yaml' (Setup and dataset path)
 2. Train the network by running: 
 ```
 sh train.sh
