@@ -44,6 +44,5 @@ Inputs:
  python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
  ``` 
   
-  ## Acknowledgments
-  
-  * [salsanext](https://github.com/Halmstad-University/SalsaNext/blob/master/README.md)
+  ### Acknowledgments
+Acknowledgments are given to the open source code of [salsanext](https://github.com/Halmstad-University/SalsaNext/blob/master/README.md)
