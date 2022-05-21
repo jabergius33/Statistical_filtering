@@ -16,8 +16,9 @@ The code is implmeted on linux ubuntu 20.04 (conda version: 4.10.3).
 
 #### Training (potentially need to chmod +x the file)
 
-1. Modify the config file at 'config/semantickitti.yaml' (Setup and dataset path)
-2. Train the network by running: 
+1. Modify the config file at 'config/semantickitti.yaml' (Setup and dataset path).
+2. Create a empty 'logs_dir' folder.
+3. Train the network with: 
 ```
 sh train.sh
 ```
