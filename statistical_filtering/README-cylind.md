@@ -45,4 +45,4 @@ Inputs:
  ``` 
   
   ### Acknowledgment
-Acknowledgment are given to the open source code of [salsanext](https://github.com/Halmstad-University/SalsaNext/blob/master/README.md)
+Acknowledgment are given to the open source code of 
