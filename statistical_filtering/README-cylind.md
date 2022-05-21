@@ -1,6 +1,6 @@
 # Cylinder for binary segmentation of snow
 
-The code is implmeted on linux ubuntu 20.04
+The code is implmeted on linux ubuntu 20.04 (conda version: 4.10.3).
 
 
 #### Pre-config:
@@ -44,4 +44,6 @@ Inputs:
  python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
  ``` 
   
+  ## Acknowledgments
   
+  * [salsanext](https://github.com/Halmstad-University/SalsaNext/blob/master/README.md)
