@@ -24,7 +24,6 @@ sh train.sh
 
 #### Generate prediction labels (demo_test_folder.py )
 1. Update path to model in "demo_test_folder.py" (model to infer)
-2. Create an empty 'Sequences' folder where the predictions will be stored
 3. Run: demo_test_folder.py
 
   Args:
