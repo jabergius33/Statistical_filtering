@@ -39,8 +39,8 @@ python train_SemanticKITTI.py
 #### Generate prediction labels (test_pretrain_SemanticKITTI.py)
 1. Set dataset path in 'test_pretrain_SemanticKITTI.py'
 2. Set model in 'test_pretrain_SemanticKITTI.py'
-3. Generate prediction by running: test_pretrain_SemanticKITTI.py
-4. Output stored in: /out
+3. Create a 'out' folder to store the output
+4. Generate prediction by running: test_pretrain_SemanticKITTI.py
 
 ##### Example:
 ```
@@ -51,11 +51,12 @@ python test_pretrain_SemanticKITTI.py
 #### Evaluate file (Result.py)    
 Inputs:
 * --prediction-folder : Path to predictions folder (/pred)
-* --dataset-folder : Path to the dataset (/dataset/sequences/)   
+* --dataset-folder : Path to the dataset (/dataset/sequences)   
+* 
  ##### Example:
  ```
   python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
  ``` 
   
   ### Acknowledgment
-Acknowledgment are given to the open source code of [PolarNet]
+Acknowledgment are given to the open source code of [PolarNet](https://github.com/edwardzhou130/PolarSeg/blob/master/README.md)
