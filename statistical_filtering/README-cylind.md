@@ -1,37 +1,43 @@
-# Cylinder for binary segmentation of snow
+# PolarNet for binary segmentation of snow
 
-The code is implmeted on linux ubuntu 20.04 (conda version: 4.10.3).
+The code is tested on linux ubuntu 20.04 (conda version: 4.10.3).
 
 
-#### Pre-config:
-##### Create a environment with:
-  * conda env create -f environment.yml
+#### Pre-setup:
+##### Create a environment:
+  * conda create -n myenv python=3.6
  ##### Activate it using:
-  * conda activate Cylinder
+  * conda activate myenv
+##### Install packages:
+  * pip install -r requirements.txt
+##### Confirm that you are using torch 1.10.x+cu102
+```
+   python -c "import torch; print(torch.version)"
+```
+##### Install torch-scatter:
+  * pip install torch-scatter -f https://data.pyg.org/whl/torch-1.10.0+cu102.html
 ##### Install additional package:
-  * pip install -U scikit-learn
+* pip install -U scikit-learn
+* conda install tensorboard
+
+  
   
 ### How to use it:
 
 
 #### Training (potentially need to chmod +x the file)
 
-1. Modify the config file at 'config/semantickitti.yaml' (Setup and dataset path).
-2. Create a empty 'logs_dir' folder.
-3. Train the network with: 
-```
-sh train.sh
-```
+1. 
 
-#### Generate prediction labels (demo_test_folder.py )
-1. Update 'model_load_path' in "demo_test_folder.py" (model to infer)
-3. Run: demo_test_folder.py
+
+#### Generate prediction labels ( )
+
 
   Args:
 * --demo-folder : Path to the dataset (sequences folder)
  ##### Example:
 ```
-python demo_test_folder.py --demo-folder /dataset/sequences/
+
 ```
 
 
@@ -41,7 +47,6 @@ Inputs:
 * --dataset-folder : Path to the dataset (/dataset/sequences/)   
  ##### Example:
  ```
- python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
  ``` 
   
   ### Acknowledgment
