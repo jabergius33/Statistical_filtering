@@ -40,6 +40,7 @@ python train_SemanticKITTI.py
 1. Set dataset path in 'test_pretrain_SemanticKITTI.py'
 2. Set model in 'test_pretrain_SemanticKITTI.py'
 3. Generate prediction by running: test_pretrain_SemanticKITTI.py
+4. Output stored in: /out
 
 ##### Example:
 ```
@@ -53,6 +54,7 @@ Inputs:
 * --dataset-folder : Path to the dataset (/dataset/sequences/)   
  ##### Example:
  ```
+  python Result.py --prediction-folder /pred --dataset-folder /dataset/sequences/
  ``` 
   
   ### Acknowledgment
