@@ -48,7 +48,7 @@ python train_SemanticKITTI.py --data_dir data/sequences/
 
 ##### Example:
 ```
-python test_pretrain_SemanticKITTI.py --data_dir /data/sequences/ --model_save_path
+python test_pretrain_SemanticKITTI.py --data_dir data/sequences/ --model_save_path model.pt
 ```
 
 
