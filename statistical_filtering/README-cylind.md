@@ -27,20 +27,21 @@ The code is tested on linux ubuntu 20.04 (conda version: 4.10.3).
 
 #### Training (train_SemanticKITTI.py)
 
-1. Set dataset path in train_SemanticKITTI.py ('INPUT_PATH')
-2. Run: train_SemanticKITTI.py  
+* Run: train_SemanticKITTI.py  
+
+##### Args:
+*  --data_dir : path to data sequences folder
 
 ##### Example:
 ```
-python train_SemanticKITTI.py
+python train_SemanticKITTI.py --data_dir data/sequences/
 ```
 
 
 #### Generate prediction labels (test_pretrain_SemanticKITTI.py)
-1. Set dataset path in 'test_pretrain_SemanticKITTI.py'
-2. Set model in 'test_pretrain_SemanticKITTI.py'
-3. Create a 'out' folder to store the output
-4. Generate prediction by running: test_pretrain_SemanticKITTI.py
+1. Set model in 'test_pretrain_SemanticKITTI.py'
+2. Create a 'out' folder to store the output
+3. Generate prediction by running: test_pretrain_SemanticKITTI.py
 
 ##### Example:
 ```
