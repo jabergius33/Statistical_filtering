@@ -39,13 +39,16 @@ python train_SemanticKITTI.py --data_dir data/sequences/
 
 
 #### Generate prediction labels (test_pretrain_SemanticKITTI.py)
-1. Set model in 'test_pretrain_SemanticKITTI.py'
-2. Create a 'out' folder to store the output
-3. Generate prediction by running: test_pretrain_SemanticKITTI.py
+1. Create a '/out' folder to store the output
+2. Generate prediction by running: test_pretrain_SemanticKITTI.py
+
+##### Args:
+*  --data_dir : path to data sequences folder
+* --model_save_path : path to saved model 
 
 ##### Example:
 ```
-python test_pretrain_SemanticKITTI.py
+python test_pretrain_SemanticKITTI.py --data_dir /data/sequences/ --model_save_path
 ```
 
 
