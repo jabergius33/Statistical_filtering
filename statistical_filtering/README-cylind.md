@@ -25,19 +25,25 @@ The code is tested on linux ubuntu 20.04 (conda version: 4.10.3).
 ### How to use it:
 
 
-#### Training (potentially need to chmod +x the file)
+#### Training (train_SemanticKITTI.py)
 
-1. 
+1. Set dataset path in train_SemanticKITTI.py ('INPUT_PATH')
+2. Run: train_SemanticKITTI.py  
 
-
-#### Generate prediction labels ( )
-
-
-  Args:
-* --demo-folder : Path to the dataset (sequences folder)
- ##### Example:
+##### Example:
+```
+python train_SemanticKITTI.py
 ```
 
+
+#### Generate prediction labels (test_pretrain_SemanticKITTI.py)
+1. Set dataset path in 'test_pretrain_SemanticKITTI.py'
+2. Set model in 'test_pretrain_SemanticKITTI.py'
+3. Generate prediction by running: test_pretrain_SemanticKITTI.py
+
+##### Example:
+```
+python test_pretrain_SemanticKITTI.py
 ```
 
 
@@ -50,4 +56,4 @@ Inputs:
  ``` 
   
   ### Acknowledgment
-Acknowledgment are given to the open source code of 
+Acknowledgment are given to the open source code of [PolarNet]
