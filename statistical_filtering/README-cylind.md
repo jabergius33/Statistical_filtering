@@ -54,12 +54,12 @@ python test_pretrain_SemanticKITTI.py --data_dir data/sequences/ --model_save_pa
 
 #### Evaluate file (Result.py)    
 Inputs:
-* --prediction-folder : Path to predictions folder (/pred/sequences/)
-* --dataset-folder : Path to the dataset (/dataset/sequences/)   
+* --prediction-folder : Path to predictions folder (/pred/sequences)
+* --dataset-folder : Path to the dataset (/dataset/sequences)   
 * 
  ##### Example:
  ```
-  python Result.py --prediction-folder /pred/sequences/ --dataset-folder /dataset/sequences/
+  python Result.py --prediction-folder /pred/sequences --dataset-folder /dataset/sequences
  ``` 
   
   ### Acknowledgment
